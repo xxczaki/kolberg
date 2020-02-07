@@ -3,7 +3,7 @@
   <h2 align="center">Parsify</h2>
   <p align="center">Fast, Extensible parsing engine ⚡<p>
   <p align="center">
-	<a href="https://travis-ci.org/parsify/core"><img src="https://travis-ci.org/parsify/core.svg?branch=master" alt="Build Status"></a>
+	<a href="https://travis-ci.com/parsify/core"><img src="https://travis-ci.com/parsify/core.svg?branch=master" alt="Build Status"></a>
 	<a href="https://github.com/sindresorhus/xo"><img src="https://img.shields.io/badge/code_style-XO-5ed9c7.svg" alt="Code Style"></a>
 </p>
 </p>
@@ -21,9 +21,9 @@ Parsify is made out of a [lightweight core](https://github.com/parsify-dev/core)
 
 Name | Status
 ---|---
-[@parsify/math](https://github.com/parsify-dev/math) | [![Build Status](https://travis-ci.org/parsify-dev/math.svg?branch=master)](https://travis-ci.org/parsify-dev/math) [![Coverage Status](https://coveralls.io/repos/github/parsify-dev/math/badge.svg?branch=master)](https://coveralls.io/github/parsify-dev/math?branch=master)
-[@parsify/currencies](https://github.com/parsify-dev/currencies) | [![Build Status](https://travis-ci.org/parsify-dev/currencies.svg?branch=master)](https://travis-ci.org/parsify-dev/currencies) [![Coverage Status](https://coveralls.io/repos/github/parsify-dev/currencies/badge.svg?branch=master)](https://coveralls.io/github/parsify-dev/currencies?branch=master)
-[@parsify/date](https://github.com/parsify-dev/date) | [![Build Status](https://travis-ci.org/parsify-dev/date.svg?branch=master)](https://travis-ci.org/parsify-dev/date) [![Coverage Status](https://coveralls.io/repos/github/parsify-dev/date/badge.svg?branch=master)](https://coveralls.io/github/parsify-dev/date?branch=master)
+[@parsify/math](https://github.com/parsify-dev/math) | [![Build Status](https://travis-ci.com/parsify-dev/math.svg?branch=master)](https://travis-ci.com/parsify-dev/math) [![Coverage Status](https://coveralls.io/repos/github/parsify-dev/math/badge.svg?branch=master)](https://coveralls.io/github/parsify-dev/math?branch=master)
+[@parsify/currencies](https://github.com/parsify-dev/currencies) | [![Build Status](https://travis-ci.com/parsify-dev/currencies.svg?branch=master)](https://travis-ci.com/parsify-dev/currencies) [![Coverage Status](https://coveralls.io/repos/github/parsify-dev/currencies/badge.svg?branch=master)](https://coveralls.io/github/parsify-dev/currencies?branch=master)
+[@parsify/date](https://github.com/parsify-dev/date) | [![Build Status](https://travis-ci.com/parsify-dev/date.svg?branch=master)](https://travis-ci.com/parsify-dev/date) [![Coverage Status](https://coveralls.io/repos/github/parsify-dev/date/badge.svg?branch=master)](https://coveralls.io/github/parsify-dev/date?branch=master)
 
 ## Community made plugins
 
