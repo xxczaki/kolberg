@@ -21,9 +21,9 @@ Parsify is made out of a [lightweight core](https://github.com/parsify-dev/core)
 
 Name | Status
 ---|---
-[@parsify/math]() | [![Build Status](https://travis-ci.org/parsify-dev/math.svg?branch=master)](https://travis-ci.org/parsify-dev/math) [![Coverage Status](https://coveralls.io/repos/github/parsify-dev/math/badge.svg?branch=master)](https://coveralls.io/github/parsify-dev/math?branch=master)
-[@parsify/currencies]() | [![Build Status](https://travis-ci.org/parsify-dev/currencies.svg?branch=master)](https://travis-ci.org/parsify-dev/currencies) [![Coverage Status](https://coveralls.io/repos/github/parsify-dev/currencies/badge.svg?branch=master)](https://coveralls.io/github/parsify-dev/currencies?branch=master)
-[@parsify/date]() | [![Build Status](https://travis-ci.org/parsify-dev/date.svg?branch=master)](https://travis-ci.org/parsify-dev/date) [![Coverage Status](https://coveralls.io/repos/github/parsify-dev/date/badge.svg?branch=master)](https://coveralls.io/github/parsify-dev/date?branch=master)
+[@parsify/math](https://github.com/parsify-dev/math) | [![Build Status](https://travis-ci.org/parsify-dev/math.svg?branch=master)](https://travis-ci.org/parsify-dev/math) [![Coverage Status](https://coveralls.io/repos/github/parsify-dev/math/badge.svg?branch=master)](https://coveralls.io/github/parsify-dev/math?branch=master)
+[@parsify/currencies](https://github.com/parsify-dev/currencies) | [![Build Status](https://travis-ci.org/parsify-dev/currencies.svg?branch=master)](https://travis-ci.org/parsify-dev/currencies) [![Coverage Status](https://coveralls.io/repos/github/parsify-dev/currencies/badge.svg?branch=master)](https://coveralls.io/github/parsify-dev/currencies?branch=master)
+[@parsify/date](https://github.com/parsify-dev/date) | [![Build Status](https://travis-ci.org/parsify-dev/date.svg?branch=master)](https://travis-ci.org/parsify-dev/date) [![Coverage Status](https://coveralls.io/repos/github/parsify-dev/date/badge.svg?branch=master)](https://coveralls.io/github/parsify-dev/date?branch=master)
 
 ## Community made plugins
 
