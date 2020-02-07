@@ -11,7 +11,7 @@ test('with plugins', async t => {
     ]);
 
     t.is(await parsify.parse('1+2'), 3);
-    t.is(await parsify.parse('10 usd to pln'), '38.55 PLN');
+    t.regex(await parsify.parse('10 usd to pln'), /PLN/);
 });
 
 test('comments', async t => {
