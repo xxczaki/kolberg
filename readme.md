@@ -3,7 +3,7 @@
   <h2 align="center">Parsify</h2>
   <p align="center">Fast, Extensible parsing engine ⚡<p>
   <p align="center">
-	<a href="https://travis-ci.com/parsify/core"><img src="https://travis-ci.com/parsify/core.svg?branch=master" alt="Build Status"></a>
+	<a href="https://travis-ci.com/parsify-dev/core"><img src="https://travis-ci.com/parsify-dev/core.svg?branch=master" alt="Build Status"></a>
 	<a href="https://github.com/sindresorhus/xo"><img src="https://img.shields.io/badge/code_style-XO-5ed9c7.svg" alt="Code Style"></a>
 </p>
 </p>
