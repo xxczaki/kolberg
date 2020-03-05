@@ -1,6 +1,6 @@
 {
     "name": "@parsify/core",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "Parsify core",
     "main": "dist/index.js",
     "module": "dist/index.esm.js",
@@ -35,7 +35,7 @@
     "devDependencies": {
         "@akepinski/tsconfig": "0.0.2",
         "@parsify/currencies": "0.0.1",
-        "@parsify/math": "0.0.5",
+        "@parsify/math": "0.1.0",
         "@typescript-eslint/eslint-plugin": "^2.22.0",
         "@typescript-eslint/parser": "^2.22.0",
         "ava": "^3.5.0",
