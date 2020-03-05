@@ -17,8 +17,8 @@ test('with plugins', async t => {
 test('comments', async t => {
     const parsify = new Parsify();
 
-    t.is(await parsify.parse('# Example comment'), undefined);
-    t.is(await parsify.parse('//Example comment'), undefined);
+    t.is(await parsify.parse('# Example comment'), '');
+    t.is(await parsify.parse('//Example comment'), '');
 });
 
 test('without plugins', async t => {
