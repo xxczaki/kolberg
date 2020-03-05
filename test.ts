@@ -10,7 +10,7 @@ test('with plugins', async t => {
         parsifyCurrenciesPlugin()
     ]);
 
-    t.is(await parsify.parse('1+2'), 3);
+    t.is(await parsify.parse('1+2'), '3');
     t.regex(await parsify.parse('10 usd to pln'), /PLN/);
 });
 
