@@ -10,7 +10,7 @@ export default class Parsify {
 	async parse(expression: string): Promise<any> {
 		// Do not parse comments (expressions, that start with either `#` or `//`)
 		if (/^#|\/\//i.exec(expression)) {
-			return '';
+			return 'comment';
 		}
 
 		// Pipe the expression through plugins
