@@ -18,6 +18,10 @@ It was inspired by [Numi](https://numi.app), a calculator app for macOS.
 
 Parsify is made out of a [lightweight core](https://github.com/parsify-dev/core) and various [plugins](#official-plugins), that can parse different expressions. 
 
+## Demo
+
+You can test Parsify [here](https://parsify.now.sh) :unicorn:
+
 ## Official Plugins
 
 Name | Status
