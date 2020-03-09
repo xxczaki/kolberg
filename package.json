@@ -1,6 +1,6 @@
 {
     "name": "@parsify/core",
-    "version": "0.0.1",
+    "version": "0.0.3",
     "description": "Parsify core",
     "main": "dist/index.js",
     "module": "dist/index.esm.js",
@@ -35,18 +35,18 @@
     "devDependencies": {
         "@akepinski/tsconfig": "0.0.2",
         "@parsify/currencies": "0.0.1",
-        "@parsify/math": "0.0.3",
-        "@typescript-eslint/eslint-plugin": "^2.19.0",
-        "@typescript-eslint/parser": "^2.19.0",
-        "ava": "^3.2.0",
+        "@parsify/math": "0.1.0",
+        "@typescript-eslint/eslint-plugin": "^2.22.0",
+        "@typescript-eslint/parser": "^2.22.0",
+        "ava": "^3.5.0",
         "coveralls": "^3.0.9",
-        "cpy-cli": "^3.0.0",
+        "cpy-cli": "^3.1.0",
         "del-cli": "^3.0.0",
         "eslint-config-xo-typescript": "^0.26.0",
         "nyc": "^15.0.0",
         "ts-node": "^8.6.2",
-        "typescript": "^3.7.5",
-        "xo": "^0.25.3"
+        "typescript": "^3.8.3",
+        "xo": "^0.27.2"
     },
     "sideEffects": false,
     "ava": {

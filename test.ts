@@ -10,15 +10,15 @@ test('with plugins', async t => {
         parsifyCurrenciesPlugin()
     ]);
 
-    t.is(await parsify.parse('1+2'), 3);
+    t.is(await parsify.parse('1+2'), '3');
     t.regex(await parsify.parse('10 usd to pln'), /PLN/);
 });
 
 test('comments', async t => {
     const parsify = new Parsify();
 
-    t.is(await parsify.parse('# Example comment'), undefined);
-    t.is(await parsify.parse('//Example comment'), undefined);
+    t.is(await parsify.parse('# Example comment'), 'comment');
+    t.is(await parsify.parse('//Example comment'), 'comment');
 });
 
 test('without plugins', async t => {
