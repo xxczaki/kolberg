@@ -34,7 +34,7 @@ More official plugins coming soon!
 
 ## Community made plugins
 
-> Learn [how to build a plugin]() [WIP]!
+> Use [create-parsify-plugin](https://github.com/parsify-dev/create-parsify-plugin) to easily create plugins for Parsify!
 
 ## License
 
