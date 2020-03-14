@@ -13,10 +13,8 @@ export default class Parsify {
 			return 'comment';
 		}
 
-		// Do not parse labels (words, that end with `:`)
-		if (/.*:/.exec(expression)) {
-			return expression.replace(/.*:/, '').trim();
-		}
+		// Remove labels (words, that end with `:`)
+		expression = expression.replace(/.*:/, '').trim();
 
 		// Pipe the expression through plugins
 		if (this.plugins && (this.plugins).length > 0) {
