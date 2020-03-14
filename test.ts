@@ -21,7 +21,7 @@ test('comments', async t => {
 test('labels', async t => {
 	const parsify = new Parsify();
 
-	t.is(await parsify.parse('Price: 10 usd to pln'), '10 usd to pln');
+	t.is(await parsify.parse('Result: 10+2'), '10+2');
 });
 
 test('without plugins', async t => {
