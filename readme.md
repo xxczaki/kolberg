@@ -29,6 +29,7 @@ Name | Status
 [@parsify/math](https://github.com/parsify-dev/math) | [![Build Status](https://travis-ci.com/parsify-dev/math.svg?branch=master)](https://travis-ci.com/parsify-dev/math) [![Coverage Status](https://coveralls.io/repos/github/parsify-dev/math/badge.svg?branch=master)](https://coveralls.io/github/parsify-dev/math?branch=master)
 [@parsify/currencies](https://github.com/parsify-dev/currencies) | [![Build Status](https://travis-ci.com/parsify-dev/currencies.svg?branch=master)](https://travis-ci.com/parsify-dev/currencies) [![Coverage Status](https://coveralls.io/repos/github/parsify-dev/currencies/badge.svg?branch=master)](https://coveralls.io/github/parsify-dev/currencies?branch=master)
 [@parsify/date](https://github.com/parsify-dev/date) | [![Build Status](https://travis-ci.com/parsify-dev/date.svg?branch=master)](https://travis-ci.com/parsify-dev/date) [![Coverage Status](https://coveralls.io/repos/github/parsify-dev/date/badge.svg?branch=master)](https://coveralls.io/github/parsify-dev/date?branch=master)
+[@parsify/timezone](https://github.com/parsify-dev/timezone) | [![Build Status](https://travis-ci.com/parsify-dev/timezone.svg?branch=master)](https://travis-ci.com/parsify-dev/date) [![Coverage Status](https://coveralls.io/repos/github/parsify-dev/timezone/badge.svg?branch=master)](https://coveralls.io/github/parsify-dev/timezone?branch=master)
 
 More official plugins coming soon!
 
