@@ -1,7 +1,7 @@
 import pPipe from 'p-pipe';
 
 export default class Parsify {
-	constructor(public readonly plugins?: ReadonlyArray<(expression: string) => Promise<any>>) { }
+	constructor(private readonly plugins?: ReadonlyArray<(expression: string) => Promise<any>>) { }
 
 	/**
 	* @param expression Expression you want to parse
