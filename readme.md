@@ -37,6 +37,8 @@ More official plugins coming soon!
 
 > Use [create-parsify-plugin](https://github.com/parsify-dev/create-parsify-plugin) to easily create plugins for Parsify!
 
+- [parsify-plugin-covid19](https://github.com/xxczaki/parsify-plugin-covid19)
+
 ## License
 
 [MIT](https://opensource.org/licenses/MIT)
