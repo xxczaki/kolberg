@@ -16,6 +16,7 @@ test('comments', async t => {
 
 	t.is(await parsify.parse('# Example comment'), '');
 	t.is(await parsify.parse('//Example comment'), '');
+	t.is(await parsify.parse('// example: comment'), '');
 	t.is(await parsify.parse('2+2 // Quick maths'), '2+2');
 });
 

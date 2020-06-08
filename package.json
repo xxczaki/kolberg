@@ -34,7 +34,7 @@
     ],
     "devDependencies": {
         "@akepinski/tsconfig": "0.0.2",
-        "@parsify/math": "0.4.0",
+        "@parsify/math": "0.5.0",
         "@typescript-eslint/eslint-plugin": "^3.1.0",
         "@typescript-eslint/parser": "^3.1.0",
         "ava": "^3.8.2",

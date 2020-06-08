@@ -9,8 +9,8 @@ export default class Parsify {
 	*/
 	async parse(expression: string): Promise<any> {
 		// Remove labels (words, that end with `:`) and comments
-		expression = expression.replace(/.*:/, '').trim();
 		expression = expression.replace(/((\/{2}|#).*)/, '').trim();
+		expression = expression.replace(/.*:/, '').trim();
 
 		// Pipe the expression through plugins
 		if (this.plugins && (this.plugins).length > 0) {
