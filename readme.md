@@ -33,6 +33,10 @@ console.log(result); //=> 'lazy'
 
 ## API
 
+- [get(expression)](#getexpression)
+- [remove(expression)](#removeexpression)
+- [replace(expression)](#replaceexpression)
+
 ### get(expression)
 
 #### expression
