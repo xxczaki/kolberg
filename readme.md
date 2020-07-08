@@ -2,7 +2,7 @@
 
 > Useful utilities for string searching and manipulation.
 
-[![Build Status](https://travis-ci.org/xxczaki/kolberg.svg?branch=master)](https://travis-ci.org/xxczaki/kolberg)
+[![Build Status](https://travis-ci.com/xxczaki/kolberg.svg?branch=master)](https://travis-ci.com/xxczaki/kolberg)
 [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/xojs/xo)
 
 Have you had to split a string into a few parts based on a certain character or keyword? Or maybe place a word between symbols? Such operations are common when building an expression parser or simply working with text. Kolberg aims to make it easier by providing a simple, human-readable API.
