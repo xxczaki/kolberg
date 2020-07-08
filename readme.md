@@ -1,43 +1,191 @@
-<p align="center">
-  <img src="logo.svg" height="128">
-  <h2 align="center">Parsify</h2>
-  <p align="center">Fast, Extensible parsing engine ⚡<p>
-  <p align="center">
-	<a href="https://travis-ci.com/parsify-dev/core"><img src="https://travis-ci.com/parsify-dev/core.svg?branch=master" alt="Build Status"></a>
-  <a href="https://coveralls.io/github/parsify-dev/core?branch=master"><img src="https://coveralls.io/repos/github/parsify-dev/core/badge.svg?branch=master" alt="Coverage Status"></a>
-	<a href="https://github.com/sindresorhus/xo"><img src="https://img.shields.io/badge/code_style-XO-5ed9c7.svg" alt="Code Style"></a>
-</p>
-</p>
+# Kolberg
 
-## About
+> Useful utilities for string searching and manipulation.
 
-**Parsify** is a parsing engine, that is fast and can be extended using plugins.
-It was inspired by [Numi](https://numi.app), a calculator app for macOS.
+[![Build Status](https://travis-ci.org/xxczaki/kolberg.svg?branch=master)](https://travis-ci.org/xxczaki/kolberg)
+[![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/xojs/xo)
 
-## Architecture
+Have you had to split a string into a few parts based on a certain character or keyword? Or maybe place a word between symbols? Such operations are common when building an expression parser or simply working with text. Kolberg aims to make it easier by providing a simple, human-readable API.
 
-Parsify is made out of a [lightweight core](https://github.com/parsify-dev/core) and various [plugins](#official-plugins), that can parse different expressions. 
+---
 
-## Demo
+## Features
 
-You can test Parsify [here](https://parsify.now.sh) :unicorn:
+- Lightweight
+- Simple, human-readable API
+- Written in TypeScript
 
-## Official Plugins
+## Install
 
-Name | Status
----|---
-[@parsify/math](https://github.com/parsify-dev/math) | [![Build Status](https://travis-ci.com/parsify-dev/math.svg?branch=master)](https://travis-ci.com/parsify-dev/math) [![Coverage Status](https://coveralls.io/repos/github/parsify-dev/math/badge.svg?branch=master)](https://coveralls.io/github/parsify-dev/math?branch=master)
-[@parsify/currencies](https://github.com/parsify-dev/currencies) | [![Build Status](https://travis-ci.com/parsify-dev/currencies.svg?branch=master)](https://travis-ci.com/parsify-dev/currencies) [![Coverage Status](https://coveralls.io/repos/github/parsify-dev/currencies/badge.svg?branch=master)](https://coveralls.io/github/parsify-dev/currencies?branch=master)
-[@parsify/date](https://github.com/parsify-dev/date) | [![Build Status](https://travis-ci.com/parsify-dev/date.svg?branch=master)](https://travis-ci.com/parsify-dev/date) [![Coverage Status](https://coveralls.io/repos/github/parsify-dev/date/badge.svg?branch=master)](https://coveralls.io/github/parsify-dev/date?branch=master)
-[@parsify/timezone](https://github.com/parsify-dev/timezone) | [![Build Status](https://travis-ci.com/parsify-dev/timezone.svg?branch=master)](https://travis-ci.com/parsify-dev/date) [![Coverage Status](https://coveralls.io/repos/github/parsify-dev/timezone/badge.svg?branch=master)](https://coveralls.io/github/parsify-dev/timezone?branch=master)
+```
+$ npm install kolberg
+```
 
-More official plugins coming soon!
+## Usage
 
-## Community made plugins
+```js
+import {get} from 'kolberg';
 
-> Use [create-parsify-plugin](https://github.com/parsify-dev/create-parsify-plugin) to easily create plugins for Parsify!
+const result = get('the quick brown fox jumps over the lazy dog').between('the', 'dog')?.trim();
 
-- [parsify-plugin-covid19](https://github.com/xxczaki/parsify-plugin-covid19)
+console.log(result); //=> 'lazy'
+```
+
+## API
+
+### get(expression)
+
+#### expression
+
+Type: `string`
+
+String, which you want to search or manipulate.
+
+### .before(identifier)
+
+Get the contents of a string before identifier. Returns a `string` or `undefined`.
+
+#### identifier
+
+Type: `string | RegExp`
+
+The identifier, **before** which you want to receive the content.
+
+### .after(identifier)
+
+Get the contents of a string **after** identifier. Returns a `string` or `undefined`.
+
+#### identifier
+
+Type: `string | RegExp`
+
+The identifier, **after** which you want to receive the content.
+
+### .between(firstIdentifier, secondIdentifier)
+
+Get the contents of a string **between** identifiers. Returns a `string` or `undefined`.
+
+#### firstIdentifier
+
+Type: `string | RegExp`
+
+The identifier, from which you want to search.
+
+#### secondIdentifier
+
+Type: `string | RegExp`
+
+The identifier, to which you want to search.
+
+### remove(expression)
+
+#### expression
+
+Type: `string`
+
+String, which you want to search or manipulate.
+
+### .before(identifier)
+
+Remove the contents of a string before identifier. Returns a `string` or `undefined`.
+
+#### identifier
+
+Type: `string | RegExp`
+
+The identifier, **before** which you want to remove the content.
+
+### .after(identifier)
+
+Remove the contents of a string **after** identifier. Returns a `string` or `undefined`.
+
+#### identifier
+
+Type: `string | RegExp`
+
+The identifier, **after** which you want to remove the content.
+
+### .between(firstIdentifier, secondIdentifier)
+
+Remove the contents of a string **between** identifiers. Returns a `string` or `undefined`.
+
+#### firstIdentifier
+
+Type: `string | RegExp`
+
+The identifier, from which you want to search.
+
+#### secondIdentifier
+
+Type: `string | RegExp`
+
+The identifier, to which you want to search.
+
+### replace(expression)
+
+#### expression
+
+Type: `string`
+
+String, which you want to search or manipulate.
+
+### .before(identifier, replaceWith)
+
+Replace the contents of a string before identifier. Returns a `string` or `undefined`.
+
+#### identifier
+
+Type: `string | RegExp`
+
+The identifier, **before** which you want to replace the content.
+
+#### replaceWith
+
+Type: `string`
+
+String, which you want to replace the content with.
+
+### .after(identifier, replaceWith)
+
+Replace the contents of a string **after** identifier. Returns a `string` or `undefined`.
+
+#### identifier
+
+Type: `string | RegExp`
+
+The identifier, **after** which you want to replace the content.
+
+#### replaceWith
+
+Type: `string`
+
+String, which you want to replace the content with.
+
+### .between(firstIdentifier, secondIdentifier, replaceWith)
+
+Replace the contents of a string **between** identifiers. Returns a `string` or `undefined`.
+
+#### firstIdentifier
+
+Type: `string | RegExp`
+
+The identifier, from which you want to search.
+
+#### secondIdentifier
+
+Type: `string | RegExp`
+
+The identifier, to which you want to search.
+
+#### replaceWith
+
+Type: `string`
+
+String, which you want to replace the content with.
+
+## Why `kolberg`?
+
+The name `kolberg` comes from a Polish etnographer, folklorist, and composer active during the foreign Partitions of Poland - [Henryk Oskar Kolberg](https://en.wikipedia.org/wiki/Oskar_Kolberg).
 
 ## License
 

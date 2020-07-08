@@ -1,7 +1,8 @@
 {
-    "name": "@parsify/core",
-    "version": "0.2.1",
-    "description": "Parsify core",
+    "name": "kolberg",
+    "version": "1.0.0",
+    "description": "Useful utilities for string searching and manipulation.",
+    "type": "module",
     "main": "dist/index.js",
     "module": "dist/index.esm.js",
     "types": "dist/index.d.ts",
@@ -10,7 +11,7 @@
     ],
     "author": "Antoni Kepinski <a@kepinski.me> (https://kepinski.me)",
     "bugs": {
-        "url": "https://github.com/parsify/core/issues"
+        "url": "https://github.com/xxczaki/kolberg/issues"
     },
     "scripts": {
         "prebuild": "del-cli dist",
@@ -24,28 +25,38 @@
         "node": ">=10"
     },
     "license": "MIT",
-    "repository": "parsify/core",
-    "homepage": "https://github.com/parsify/core",
+    "repository": "xxczaki/kolberg",
+    "homepage": "https://github.com/xxczaki/kolberg",
     "keywords": [
-        "parsify",
-        "expression-parser",
-        "parser",
-        "expression"
+        "kolberg",
+        "string",
+        "strings",
+        "search",
+        "string-search",
+        "string-manipulation",
+        "replace",
+        "find",
+        "find-and-replace",
+        "remove",
+        "find-and-remove",
+        "manipulate",
+        "utils",
+        "util",
+        "utilities"
     ],
     "devDependencies": {
         "@akepinski/tsconfig": "0.0.2",
-        "@parsify/math": "0.5.0",
-        "@typescript-eslint/eslint-plugin": "^3.1.0",
-        "@typescript-eslint/parser": "^3.1.0",
-        "ava": "^3.8.2",
+        "@typescript-eslint/eslint-plugin": "^3.6.0",
+        "@typescript-eslint/parser": "^3.6.0",
+        "ava": "^3.10.1",
         "coveralls": "^3.1.0",
         "cpy-cli": "^3.1.1",
         "del-cli": "^3.0.1",
         "eslint-config-xo-typescript": "^0.31.0",
         "nyc": "^15.1.0",
         "ts-node": "^8.10.2",
-        "typescript": "^3.9.5",
-        "xo": "^0.32.0"
+        "typescript": "^3.9.6",
+        "xo": "^0.32.1"
     },
     "sideEffects": false,
     "ava": {
@@ -65,7 +76,5 @@
             "@typescript-eslint/prefer-readonly-parameter-types": "off"
         }
     },
-    "dependencies": {
-        "p-pipe": "^3.1.0"
-    }
+    "dependencies": {}
 }
